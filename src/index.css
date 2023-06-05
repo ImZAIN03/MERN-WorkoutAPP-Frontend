@@ -1,13 +1,127 @@
-body {
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* layout */
+:root {
+  --primary: #26a480;
+  -error: #c5174e;
+}
+body{
+  background: #dedada;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto';
+}
+header{
+  background: #f1efef;
+}
+header .container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a{
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
 }
+.workout-details{
+  background: #e6e1e1;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #46a52e;
+}
+.workout-details p {
+  margin: 0 ;
+  font-size: 0.9rem;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #ecd3d3;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label,input {
+  display: block;
+}
+input{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #beabab;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+form button {
+  background-color: #16a020;
+  border: 0;
+  color: #ece0e0;
+  padding: 10px;
+  font-family: 'Roboto';
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error{
+  padding: 10px;
+  background: #f1efef;
+  border: 3px solid rgb(229, 45, 45);
+  color: rgb(215, 38, 38);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+input.error{
+  border: 1.5px solid #cc4646;
+}
+.workout-details span{
+  background-color: #d72b1b;
+  border: 0;
+  color: #ece0e0;
+  padding: 5px;
+  font-family: 'Roboto';
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
