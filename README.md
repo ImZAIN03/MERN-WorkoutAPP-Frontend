@@ -1,3 +1,6 @@
+THIS IS THE FRONTEND PORTION OF MY WORKOUT APP.
+Below are the instructions to set this up.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
